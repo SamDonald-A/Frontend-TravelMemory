@@ -11,7 +11,7 @@ Frontend -
 Backend -
 <https://github.com/SamDonald-A/backend-travelmemory/tree/master>
 
-<img width="826" height="930" alt="image" src="https://github.com/user-attachments/assets/83170765-0a07-48c1-bc97-d57fddeb8144" />
+<img width="806" height="930" alt="image" src="https://github.com/user-attachments/assets/83170765-0a07-48c1-bc97-d57fddeb8144" />
 
 
 **Frontend Configuration**
