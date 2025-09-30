@@ -15,6 +15,7 @@ Backend -
 
 
 **Frontend Configuration**
+(Kindly Start these steps after backend setup)
 
 *Repeat the initial steps that are same as backend instance*
 
