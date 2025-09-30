@@ -11,7 +11,7 @@ Frontend -
 Backend -
 <https://github.com/SamDonald-A/backend-travelmemory/tree/master>
 
-<img width="796" height="1030" alt="image" src="https://github.com/user-attachments/assets/83170765-0a07-48c1-bc97-d57fddeb8144" />
+<img width="896" height="930" alt="image" src="https://github.com/user-attachments/assets/83170765-0a07-48c1-bc97-d57fddeb8144" />
 
 
 **Frontend Configuration**
@@ -31,8 +31,8 @@ Instance**
 backend URL which is a DNS name link from the Backend Load Balancer and
 replace the baseUrl variable**
 
-![](vertopal_43b094cb227a4f8ca21b52429b8ee97b/media/image2.png){width="6.5in"
-height="0.8826388888888889in"}
+<img width="975" height="132" alt="image" src="https://github.com/user-attachments/assets/c8c34b0d-65a6-47a6-bd9f-0d8ccae15da6" />
+
 
 **Step 6: Install Nodejs in the frontend**
 
@@ -40,14 +40,14 @@ height="0.8826388888888889in"}
 
 **Step 8: Check frontend on browser using DNS link or Public IP**
 
-![](vertopal_43b094cb227a4f8ca21b52429b8ee97b/media/image3.jpeg){width="4.852174103237095in"
-height="1.5215277777777778in"}
+<img width="728" height="228" alt="image" src="https://github.com/user-attachments/assets/5deb8625-258b-432f-a39b-409d89f19658" />
 
-![](vertopal_43b094cb227a4f8ca21b52429b8ee97b/media/image4.jpeg){width="5.9021981627296585in"
-height="2.9826082677165355in"}
 
-![](vertopal_43b094cb227a4f8ca21b52429b8ee97b/media/image5.jpeg){width="6.504166666666666in"
-height="3.2868055555555555in"}
+<img width="885" height="447" alt="image" src="https://github.com/user-attachments/assets/d3b9a877-bf7e-44b8-afa1-825eb5e6d904" />
+
+
+<img width="976" height="493" alt="image" src="https://github.com/user-attachments/assets/591961be-c2e1-4353-b202-be7a239f771f" />
+
 
 **Step 9: Create Build from the frontend file and copy the build file to
 the Nginx server**
@@ -58,11 +58,11 @@ npm run build
 sudo cp -r /home/ec2-user/TravelMemory/frontend/build/\*
 /usr/share/nginx/html/
 
-![](vertopal_43b094cb227a4f8ca21b52429b8ee97b/media/image6.png){width="6.5in"
-height="3.245138888888889in"}
+<img width="975" height="487" alt="image" src="https://github.com/user-attachments/assets/1f7ed360-3873-4b9d-9e6d-9a8b538319be" />
 
-![](vertopal_43b094cb227a4f8ca21b52429b8ee97b/media/image7.png){width="6.5in"
-height="0.8972222222222223in"}
+
+<img width="826" height="419" alt="image" src="https://github.com/user-attachments/assets/78cc6a18-8f44-48f6-9ada-1e8cbf27cf32" />
+
 
 \# To copy build file from frontend to Nginx server
 
@@ -76,17 +76,17 @@ sudo systemctl restart nginx
 -   Now the front should be running and able to see that on the browser
     > using DNS link
 
-![](vertopal_43b094cb227a4f8ca21b52429b8ee97b/media/image8.jpeg){width="5.508889982502187in"
-height="2.791304680664917in"}
+<img width="975" height="135" alt="image" src="https://github.com/user-attachments/assets/fd027bd1-187c-4e3e-93bb-5f0cb9b533ac" />
 
-![](vertopal_43b094cb227a4f8ca21b52429b8ee97b/media/image9.png){width="5.528720472440945in"
-height="2.823428477690289in"}
+
+<img width="828" height="423" alt="image" src="https://github.com/user-attachments/assets/3fc60b0c-a576-461c-8c6f-590d6d9aec4c" />
+
 
 **Step 10: Stop the instance and create AMI -- Amazon Machine Image from
 EC2 console**
 
-![](vertopal_43b094cb227a4f8ca21b52429b8ee97b/media/image10.jpeg){width="5.965217629046369in"
-height="3.0386559492563427in"}
+<img width="895" height="456" alt="image" src="https://github.com/user-attachments/assets/8a134c1c-7d55-4d04-9800-918201666c19" />
+
 
 **Step 11: Create Two EC2 Instances using AMI -- These two for scaling &
 Load distribution**
@@ -94,24 +94,24 @@ Load distribution**
 -   Change the one of the Instance front end header names to see Load
     > balancer distributing traffic to each Frontends
 
-![](vertopal_43b094cb227a4f8ca21b52429b8ee97b/media/image11.png){width="6.5in"
-height="0.33055555555555555in"}
+<img width="975" height="50" alt="image" src="https://github.com/user-attachments/assets/c7548748-3cd1-47d8-b62a-ddb9aea776e7" />
+
 
 **Step 12: Create target group for Load Balancer**
 
-![](vertopal_43b094cb227a4f8ca21b52429b8ee97b/media/image12.png){width="6.2021544181977255in"
-height="2.8930139982502188in"}
+<img width="930" height="434" alt="image" src="https://github.com/user-attachments/assets/78401b3a-399f-4fda-8c34-7269c616bb9d" />
+
 
 **Step 13: Create Load Balancer using the backend target goup and copy
 the DNS link to see frontend is running**
 
-![](vertopal_43b094cb227a4f8ca21b52429b8ee97b/media/image13.jpeg){width="6.495833333333334in"
-height="2.5131944444444443in"}
+<img width="974" height="377" alt="image" src="https://github.com/user-attachments/assets/22deba75-0d4a-45b3-b0f0-7808f9e33bdf" />
+
 
 Now, the Frontend Part is created successfully
 
-![](vertopal_43b094cb227a4f8ca21b52429b8ee97b/media/image14.png){width="2.4065857392825896in"
-height="4.479792213473316in"}
+<img width="361" height="672" alt="image" src="https://github.com/user-attachments/assets/e86be2f6-35ec-4b68-a2b6-e69742847891" />
+
 
 **Domain Setup**
 
@@ -124,32 +124,32 @@ height="4.479792213473316in"}
 -   Add CNAME record and past the frontend Load balancer DNS link in the
     > value input
 
-![](vertopal_43b094cb227a4f8ca21b52429b8ee97b/media/image15.jpeg){width="6.504166666666666in"
-height="3.2784722222222222in"}
+<img width="976" height="492" alt="image" src="https://github.com/user-attachments/assets/ab4d34bd-b323-4ace-b372-c5be99b2479f" />
 
-![](vertopal_43b094cb227a4f8ca21b52429b8ee97b/media/image16.jpeg){width="6.504166666666666in"
-height="3.338888888888889in"}
+
+<img width="976" height="501" alt="image" src="https://github.com/user-attachments/assets/16db7fea-32a6-48c8-96d3-6e65628b1efc" />
+
 
 -   We can check the DNS update live using 3^rd^ party websites
     > [www.dnschecker.org](http://www.dnschecker.org)
 
-![](vertopal_43b094cb227a4f8ca21b52429b8ee97b/media/image17.jpeg){width="6.504166666666666in"
-height="3.2868055555555555in"}
+<img width="976" height="493" alt="image" src="https://github.com/user-attachments/assets/2159fcac-022d-4e73-8ff9-d49bc3d21652" />
+
 
 -   And now the website should be visible after DNS updated
 
-![](vertopal_43b094cb227a4f8ca21b52429b8ee97b/media/image18.jpeg){width="6.504166666666666in"
-height="3.338888888888889in"}
+<img width="976" height="501" alt="image" src="https://github.com/user-attachments/assets/5b92864b-abec-4067-9243-b3c7a2eb6f4e" />
+
 
 -   Check adding new trip
 
-![](vertopal_43b094cb227a4f8ca21b52429b8ee97b/media/image19.jpeg){width="6.5in"
-height="3.302049431321085in"}
+<img width="975" height="495" alt="image" src="https://github.com/user-attachments/assets/1ea0e387-ea50-4843-a3bb-0ffff011c9dd" />
+
 
 -   Viewing the new trip that added
 
-![](vertopal_43b094cb227a4f8ca21b52429b8ee97b/media/image20.jpeg){width="6.504166666666666in"
-height="3.321527777777778in"}
+<img width="976" height="498" alt="image" src="https://github.com/user-attachments/assets/465e0248-1f2a-41b1-a6e3-a7e0f13f4c12" />
+
 
 In each screen shot of window we see that the Load balancer is
 distributing the traffic by each request to different Instances.
@@ -157,8 +157,8 @@ distributing the traffic by each request to different Instances.
 The Application is running successfully with Front and Backend Load
 Balancers.
 
-![](vertopal_43b094cb227a4f8ca21b52429b8ee97b/media/image21.jpeg){width="5.513043525809274in"
-height="7.1367814960629925in"}
+<img width="827" height="1070" alt="image" src="https://github.com/user-attachments/assets/5fe0ed18-b972-4875-bac5-2d66910f7b53" />
+
 
 Documentation by: Sam Donald A\
 Email: <samdonaldand@gmail.com>
