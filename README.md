@@ -3,7 +3,7 @@
 Useful Links:
 
 GitHub -
-[[https://github.com/SamDonald-A/TravelMemory]{.underline}](https://github.com/SamDonald-A/TravelMemory)
+ [[https://github.com/SamDonald-A/TravelMemory]{.underline}](https://github.com/SamDonald-A/TravelMemory)
 
 Frontend -
 <https://github.com/SamDonald-A/Frontend-TravelMemory/tree/master>
@@ -11,41 +11,41 @@ Frontend -
 Backend -
 <https://github.com/SamDonald-A/backend-travelmemory/tree/master>
 
-<img width="750" height="930" alt="image" src="https://github.com/user-attachments/assets/83170765-0a07-48c1-bc97-d57fddeb8144" />
+---
 
+------------------<img width="750" height="930" alt="image" src="https://github.com/user-attachments/assets/83170765-0a07-48c1-bc97-d57fddeb8144" />
 
-**Frontend Configuration**
+---
+
+# Frontend Configuration
 (Kindly Start these steps after backend setup)
 
 *Repeat the initial steps that are same as backend instance*
 
-**\
-Step 1: Creating a new Frontend instance and connecting to it via SSH
-using the instance\'s DNS address.**
+
+# Step 1: Creating a new Frontend instance and connecting to it via SSH using the instance's IP address.
 
 
-**Step 2: Installing GitHub in Frontend Instance**
+# Step 2: Installing GitHub in Frontend Instance
 
 
-**Step 3: Copy the link from GitHub and clone it in the frontend
-Instance**
+# Step 3: Copy the link from GitHub and clone it in the frontend
+Instance
 
 
-**Step 4: Setup *url.js* which is in frontend \> src folder and copy the
-backend URL which is a DNS name link from the Backend Load Balancer and
-replace the baseUrl variable**
+# Step 4: Setup *url.js* which is in frontend \> src folder and copy the backend URL which is a DNS name link from the Backend Load Balancer and replace the baseUrl variable
 
 <img width="975" height="132" alt="image" src="https://github.com/user-attachments/assets/c8c34b0d-65a6-47a6-bd9f-0d8ccae15da6" />
 
 
 
-**Step 6: Install Nodejs in the frontend**
+#  Step 6: Install Nodejs in the frontend
 
 
-**Step 7: Install npm for your frontend node modules**
+#  Step 7: Run Install npm in your frontend node modules
 
 
-**Step 8: Check frontend on browser using DNS link or Public IP**
+# Step 8: Check frontend on browser using DNS link or Public IP
 
 <img width="728" height="228" alt="image" src="https://github.com/user-attachments/assets/5deb8625-258b-432f-a39b-409d89f19658" />
 
@@ -59,12 +59,9 @@ replace the baseUrl variable**
 
 
 
-**Step 9: Create Build from the frontend file and copy the build file to
-the Nginx server**
+# Step 9: Create Build from the frontend file and copy the build file to the Nginx server To create build file from frontend 
 
-\# To create build file from frontend\
 npm run build
-
 sudo cp -r /home/ec2-user/TravelMemory/frontend/build/\*
 /usr/share/nginx/html/
 
@@ -76,7 +73,7 @@ sudo cp -r /home/ec2-user/TravelMemory/frontend/build/\*
 
 
 
-\# To copy build file from frontend to Nginx server
+# To copy build file from frontend to Nginx server
 
 sudo cp -r /home/ec2-user/TravelMemory/frontend/build/\*
 /usr/share/nginx/html/
@@ -96,16 +93,14 @@ sudo systemctl restart nginx
 
 
 
-**Step 10: Stop the instance and create AMI -- Amazon Machine Image from
-EC2 console**
+# Step 10: Stop the instance and create AMI -- Amazon Machine Image from EC2 in console
 
 
 <img width="895" height="456" alt="image" src="https://github.com/user-attachments/assets/8a134c1c-7d55-4d04-9800-918201666c19" />
 
 
 
-**Step 11: Create Two EC2 Instances using AMI -- These two for scaling &
-Load distribution**
+# Step 11: Create Two EC2 Instances using AMI -- These two for scaling & Load distribution
 
 -   Change the one of the Instance front end header names to see Load
     > balancer distributing traffic to each Frontends
@@ -114,14 +109,13 @@ Load distribution**
 
 
 
-**Step 12: Create target group for Load Balancer**
+# Step 12: Create target group for Load Balancer
 
 <img width="930" height="434" alt="image" src="https://github.com/user-attachments/assets/78401b3a-399f-4fda-8c34-7269c616bb9d" />
 
 
 
-**Step 13: Create Load Balancer using the backend target goup and copy
-the DNS link to see frontend is running**
+# Step 13: Create Load Balancer using the backend target goup and copy the DNS link to see frontend is running
 
 <img width="974" height="377" alt="image" src="https://github.com/user-attachments/assets/22deba75-0d4a-45b3-b0f0-7808f9e33bdf" />
 
@@ -131,11 +125,10 @@ Now, the Frontend Part is created successfully
 <img width="361" height="672" alt="image" src="https://github.com/user-attachments/assets/e86be2f6-35ec-4b68-a2b6-e69742847891" />
 
 
-**Domain Setup**
+# Domain Setup
 
 
-**Step 14: Now copy this Link and configure the domain service provider\
-**
+# Step 14: Now copy this Link and configure the domain service provider
 
 -   My case I am using Hostinger -- select domain name and go to DNS
     > settings
