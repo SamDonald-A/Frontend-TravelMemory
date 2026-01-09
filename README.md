@@ -1,4 +1,4 @@
-# Deploying Full Stack Application on AWS
+# Deploying Full-Stack Application on AWS
 
 Useful Links:
 
